@@ -7,10 +7,12 @@ pipeline{
             args '-p 3000:3000'
         }
     }
-}
-stages{
+    stages{
     // Define stage called BUild that appears on the Jenkins UI
-    stage('Build'){        
-        sh 'npm install'
+        stage('Build'){    
+            steps{
+                sh 'npm install'
+            }       
+        }
     }
 }
