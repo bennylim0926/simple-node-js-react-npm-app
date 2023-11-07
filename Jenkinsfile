@@ -26,5 +26,6 @@ pipeline{
                 sh './jenkins/scripts/kill.sh'
             }
         }
+        stage('OWASP Dependency-Check Vulnerabilities')
     }
 }
